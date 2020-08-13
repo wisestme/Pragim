@@ -32,6 +32,9 @@ namespace Pragim
 
         public static void Main()
         {
+            CustomerAbstract differentCustomer = new CustomerAbstract();
+            differentCustomer.Print();
+
             Customer customer1 = new Customer();
             customer1.Print();
             ((IAnotherInterface)customer1).Print();
