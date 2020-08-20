@@ -32,6 +32,8 @@ namespace Pragim
 
         public static void Main()
         {
+            AdditionCalculator addition = new AdditionCalculator();
+            addition.Integrate();
             CustomerAbstract differentCustomer = new CustomerAbstract();
             differentCustomer.Print();
 
