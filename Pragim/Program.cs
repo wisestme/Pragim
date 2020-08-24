@@ -32,6 +32,10 @@ namespace Pragim
 
         public static void Main()
         {
+            
+            GreetDelegate del = new GreetDelegate(ImplementDelegate.Greet);
+            del("How are you doing");
+
             AdditionCalculator addition = new AdditionCalculator();
             addition.Integrate();
             CustomerAbstract differentCustomer = new CustomerAbstract();
