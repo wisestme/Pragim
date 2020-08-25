@@ -32,6 +32,14 @@ namespace Pragim
 
         public static void Main()
         {
+            Calculator adder = new Calculator(CalculatorDelegate.add);
+            Console.WriteLine(adder(5));
+
+            Calculator multiplier = new Calculator(CalculatorDelegate.multiply);
+            Console.WriteLine(multiplier(2));
+
+            Calculator getNum = new Calculator(CalculatorDelegate.getNumber);
+            Console.WriteLine(getNum(2));
             
             GreetDelegate del = new GreetDelegate(ImplementDelegate.Greet);
             del("How are you doing");
