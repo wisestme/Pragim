@@ -13,5 +13,10 @@ namespace Pragim.Services
         {
             Console.WriteLine(message);
         }
+
+        public static void Warn(string message)
+        {
+            Console.WriteLine(message);
+        }
     }
 }

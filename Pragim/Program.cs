@@ -36,6 +36,9 @@ namespace Pragim
             GreetDelegate del = new GreetDelegate(ImplementDelegate.Greet);
             del("How are you doing");
 
+            GreetDelegate warner = new GreetDelegate(ImplementDelegate.Warn);
+            warner("Keep out of reach of everybody");
+
             AdditionCalculator addition = new AdditionCalculator();
             addition.Integrate();
             CustomerAbstract differentCustomer = new CustomerAbstract();
