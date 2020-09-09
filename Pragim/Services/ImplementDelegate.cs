@@ -6,17 +6,23 @@ using System.Threading.Tasks;
 
 namespace Pragim.Services
 {
-    public delegate void GreetDelegate(string messageDelegate);
+    public delegate void TimelyGreeting(string theMessage);
     class ImplementDelegate
     {
-        public static void Greet(string message)
+        string preMessage = "Good";
+       public void GreetMorning(string message)
         {
-            Console.WriteLine(message);
+            Console.WriteLine($"{preMessage} {message}");
         }
 
-        public static void Warn(string message)
+        public void GreetAfternoon(string message)
         {
-            Console.WriteLine(message);
+            Console.WriteLine($"{preMessage} {message}");
+        }
+
+        public void GreetEvening(string message)
+        {
+            Console.WriteLine($"{preMessage} {message}");
         }
     }
 }

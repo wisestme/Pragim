@@ -32,6 +32,18 @@ namespace Pragim
 
         public static void Main()
         {
+            WorkersPromotion workersPromotion = new WorkersPromotion();
+
+            PromotionDelegate agePromotion = new PromotionDelegate(workersPromotion.PromoteByAge);
+            agePromotion(40);
+
+            PromotionDelegate experiencePromotion = new PromotionDelegate(workersPromotion.PromoteByExperience);
+            experiencePromotion(7);
+
+            EmployeePromoter promoter = new EmployeePromoter();
+            promoter.AddEmployee();
+            
+
             Calculator adder = new Calculator(CalculatorDelegate.add);
             Console.WriteLine(adder(5));
 
@@ -40,12 +52,23 @@ namespace Pragim
 
             Calculator getNum = new Calculator(CalculatorDelegate.getNumber);
             Console.WriteLine(getNum(2));
-            
-            GreetDelegate del = new GreetDelegate(ImplementDelegate.Greet);
-            del("How are you doing");
 
-            GreetDelegate warner = new GreetDelegate(ImplementDelegate.Warn);
-            warner("Keep out of reach of everybody");
+            //GreetDelegate del = new GreetDelegate(ImplementDelegate.Greet);
+            //del("How are you doing");
+
+            //GreetDelegate warner = new GreetDelegate(ImplementDelegate.Warn);
+            //warner("Keep out of reach of everybody");
+
+            ImplementDelegate implementDelegate = new ImplementDelegate();
+            
+            TimelyGreeting greetingMorning = new TimelyGreeting(implementDelegate.GreetMorning);
+            greetingMorning("Morning");
+
+            TimelyGreeting greetAfternoon = new TimelyGreeting(implementDelegate.GreetAfternoon);
+            greetAfternoon("Afternoon");
+
+            TimelyGreeting greetEvening = new TimelyGreeting(implementDelegate.GreetEvening);
+            greetEvening("Evening");
 
             AdditionCalculator addition = new AdditionCalculator();
             addition.Integrate();
