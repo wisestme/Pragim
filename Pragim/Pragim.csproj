@@ -81,6 +81,7 @@
     <Compile Include="Services\ICustomer.cs" />
     <Compile Include="Services\ImplementAbstract.cs" />
     <Compile Include="Services\ImplementDelegate.cs" />
+    <Compile Include="Services\ImplementLists.cs" />
     <Compile Include="Services\OverloadMethod.cs" />
     <Compile Include="Services\PolyEmployee.cs" />
     <Compile Include="Services\VehicleInheritance.cs" />
