@@ -32,6 +32,9 @@ namespace Pragim
 
         public static void Main()
         {
+            ImplementLists implementLists = new ImplementLists();
+            implementLists.LagosMarketsList();
+
             WorkersPromotion workersPromotion = new WorkersPromotion();
 
             PromotionDelegate agePromotion = new PromotionDelegate(workersPromotion.PromoteByAge);

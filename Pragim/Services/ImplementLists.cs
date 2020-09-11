@@ -24,6 +24,9 @@ namespace Pragim.Services
             lagosMarkets.Add(new LagosMarkets() { ID = 2, Name = "Alaba", Products = "Electronics", ShopsSize = 10000, Revenue = 100 });
             lagosMarkets.Add(new LagosMarkets() { ID = 3, Name = "Oshodi", Products = "Variety", ShopsSize = 200000, Revenue = 80 });
             lagosMarkets.Add(new LagosMarkets() { ID = 4, Name = "Tejuosho", Products = "Fabrics", ShopsSize = 50000, Revenue = 40 });
+
+            LagosMarkets.ExpandMarket(lagosMarkets);
+            
         }
 
         public void ListOfMalls()
@@ -33,6 +36,8 @@ namespace Pragim.Services
             lagosMalls.Add(new LagosMalls() { ID = 1, Name = "Ikeja City Mall", Capacity = "70,000 Shops", Location = "Alausa, Ikeja" });
             lagosMalls.Add(new LagosMalls() { ID = 3, Name = "Maryland Mall", Capacity = "10,000 shops", Location = "Maryland" });
         }
+
+        
           
     }
 
@@ -44,13 +49,24 @@ namespace Pragim.Services
         public string Location { get; set; }
     }
 
-    class LagosMarkets
+   public class LagosMarkets
     {
         public int ID { get; set; }
         public string Name { get; set; }
         public string Products { get; set; }
         public int ShopsSize { get; set; }
         public int Revenue { get; set; }
+
+        public static void ExpandMarket(List<LagosMarkets> lagosMarketsList)
+        {
+            foreach(LagosMarkets market in lagosMarketsList)
+            {
+                if(market.ShopsSize > 50000)
+                {
+                    Console.WriteLine($"{market.Name} market to be expanded");
+                }
+            }
+        }
     }
 
     class LagosMalls
