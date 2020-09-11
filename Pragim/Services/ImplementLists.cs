@@ -20,9 +20,10 @@ namespace Pragim.Services
         {
             List<LagosMarkets> lagosMarkets = new List<LagosMarkets>();
 
-            lagosMarkets.Add(new LagosMarkets() { ID = 1, Name = "Mile 12", Products = "Food Stuffs", Size = "50,000 shops" });
-            lagosMarkets.Add(new LagosMarkets() { ID = 2, Name = "Alaba", Products = "Electronics", Size = "100,000 shops" });
-            lagosMarkets.Add(new LagosMarkets() { ID = 3, Name = "Oshodi", Products = "Variety", Size = "200,000 shops"});
+            lagosMarkets.Add(new LagosMarkets() { ID = 1, Name = "Mile 12", Products = "Food Stuffs", ShopsSize = 50000, Revenue = 90 });
+            lagosMarkets.Add(new LagosMarkets() { ID = 2, Name = "Alaba", Products = "Electronics", ShopsSize = 10000, Revenue = 100 });
+            lagosMarkets.Add(new LagosMarkets() { ID = 3, Name = "Oshodi", Products = "Variety", ShopsSize = 200000, Revenue = 80 });
+            lagosMarkets.Add(new LagosMarkets() { ID = 4, Name = "Tejuosho", Products = "Fabrics", ShopsSize = 50000, Revenue = 40 });
         }
 
         public void ListOfMalls()
@@ -48,7 +49,8 @@ namespace Pragim.Services
         public int ID { get; set; }
         public string Name { get; set; }
         public string Products { get; set; }
-        public string Size { get; set; }
+        public int ShopsSize { get; set; }
+        public int Revenue { get; set; }
     }
 
     class LagosMalls
