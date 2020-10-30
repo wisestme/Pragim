@@ -19,9 +19,8 @@ namespace Pragim
 
             Console.WriteLine($"Your full name is {firstName} {lastName}");
 
-            int i = 0;
-
-            Console.WriteLine($"{int.MinValue} {int.MaxValue}");
+            string Name = "\"Ceejay\"";
+            Console.WriteLine(Name);
         }
         public static void Main()
         {
