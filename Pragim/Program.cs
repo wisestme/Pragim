@@ -10,6 +10,14 @@ namespace Pragim
         public static void NotMain()
         {
             Console.WriteLine("I am not the main function");
+
+            Console.WriteLine("Please what is your firstname?");
+            string firstName = Console.ReadLine();
+
+            Console.WriteLine("Please what is your lastname?");
+            string lastName = Console.ReadLine();
+
+            Console.WriteLine($"Your full name is {firstName} {lastName}");
         }
         public static void Main()
         {
