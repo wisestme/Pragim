@@ -15,9 +15,9 @@ namespace Pragim
             myNumbers[1] = 102;
             myNumbers[2] = 103;
 
-            for (int i = 0; i < myNumbers.Length; i++)
+            foreach (int oneNumber in myNumbers )
             {
-                Console.WriteLine(myNumbers[i]);
+                Console.WriteLine(oneNumber);
             }
         }
         public static void Main()
