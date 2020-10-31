@@ -29,14 +29,14 @@ namespace Pragim
                 {
                     Console.WriteLine("Do you want to continue? - Yes or No?");
 
-                    userChoice = Console.ReadLine();
+                    userChoice = Console.ReadLine().ToLower();
 
-                    if (userChoice != "Yes" && userChoice != "No")
+                    if (userChoice != "yes" && userChoice != "no")
                     {
                         Console.WriteLine("Invalid choice, please say Yes or No");
                     }
-                } while (userChoice != "Yes" && userChoice != "No");
-            } while (userChoice == "Yes");
+                } while (userChoice != "yes" && userChoice != "no");
+            } while (userChoice == "yes");
             
             
         }
