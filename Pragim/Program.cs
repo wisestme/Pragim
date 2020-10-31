@@ -9,6 +9,13 @@ namespace Pragim
     {
         public static void NotMain()
         {
+            for(int i = 0; i <= 20; i++)
+            {
+                
+                if (i % 2 == 1)
+                    continue;
+                Console.WriteLine(i);
+            }
             int[] myNumbers = new int[3];
 
             myNumbers[0] = 101;
