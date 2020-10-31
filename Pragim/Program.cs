@@ -9,18 +9,49 @@ namespace Pragim
     {
         public static void NotMain()
         {
+            Console.WriteLine("Please enter your number");
+            string userNumberString = Console.ReadLine();
+            int userNumber;
+            int.TryParse(userNumberString, out userNumber);
+
+            switch (userNumber)
+            {
+                case 1:
+                    Console.WriteLine("User number is one");
+                    break;
+                case 2:
+                    Console.WriteLine("User number is two");
+                    break;
+                case 3:
+                    Console.WriteLine("User number is three");
+                    break;
+                default:
+                    Console.WriteLine("User number is out of range");
+                    break;
+
+            }
+
             Console.WriteLine("I am not the main function");
 
+
             Console.WriteLine("Please what is your firstname?");
-            string firstName = Console.ReadLine();
+            //string firstName = Console.ReadLine();
 
             Console.WriteLine("Please what is your lastname?");
-            string lastName = Console.ReadLine();
+            //string lastName = Console.ReadLine();
 
-            Console.WriteLine($"Your full name is {firstName} {lastName}");
+            //Console.WriteLine($"Your full name is {firstName} {lastName}");
 
             string Name = "\"Ceejay\"";
             Console.WriteLine(Name);
+
+            int[] EvenNumbers = new int[3];
+            EvenNumbers[0] = 0;
+            EvenNumbers[1] = 2;
+            EvenNumbers[2] = 4;
+
+            Console.WriteLine(EvenNumbers[2]);
+
         }
         public static void Main()
         {
