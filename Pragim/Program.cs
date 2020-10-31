@@ -9,36 +9,16 @@ namespace Pragim
     {
         public static void NotMain()
         {
-            string userChoice = "";
-            do
+            int[] myNumbers = new int[3];
+
+            myNumbers[0] = 101;
+            myNumbers[1] = 102;
+            myNumbers[2] = 103;
+
+            for (int i = 0; i < myNumbers.Length; i++)
             {
-                Console.WriteLine("please enter your target");
-                string userTargetString = Console.ReadLine();
-                int userTarget;
-                int.TryParse(userTargetString, out userTarget);
-
-                int Start = 0;
-
-                while (Start <= userTarget)
-                {
-                    Console.Write(Start + " ");
-                    Start = Start + 2;
-                }
-                
-                do
-                {
-                    Console.WriteLine("Do you want to continue? - Yes or No?");
-
-                    userChoice = Console.ReadLine().ToLower();
-
-                    if (userChoice != "yes" && userChoice != "no")
-                    {
-                        Console.WriteLine("Invalid choice, please say Yes or No");
-                    }
-                } while (userChoice != "yes" && userChoice != "no");
-            } while (userChoice == "yes");
-            
-            
+                Console.WriteLine(myNumbers[i]);
+            }
         }
         public static void Main()
         {
