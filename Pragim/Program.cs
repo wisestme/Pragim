@@ -9,49 +9,36 @@ namespace Pragim
     {
         public static void NotMain()
         {
-            Console.WriteLine("Please enter your number");
-            string userNumberString = Console.ReadLine();
-            int userNumber;
-            int.TryParse(userNumberString, out userNumber);
-
-            switch (userNumber)
+            string userChoice = "";
+            do
             {
-                case 1:
-                    Console.WriteLine("User number is one");
-                    break;
-                case 2:
-                    Console.WriteLine("User number is two");
-                    break;
-                case 3:
-                    Console.WriteLine("User number is three");
-                    break;
-                default:
-                    Console.WriteLine("User number is out of range");
-                    break;
+                Console.WriteLine("please enter your target");
+                string userTargetString = Console.ReadLine();
+                int userTarget;
+                int.TryParse(userTargetString, out userTarget);
 
-            }
+                int Start = 0;
 
-            Console.WriteLine("I am not the main function");
+                while (Start <= userTarget)
+                {
+                    Console.Write(Start + " ");
+                    Start = Start + 2;
+                }
+                
+                do
+                {
+                    Console.WriteLine("Do you want to continue? - Yes or No?");
 
+                    userChoice = Console.ReadLine();
 
-            Console.WriteLine("Please what is your firstname?");
-            //string firstName = Console.ReadLine();
-
-            Console.WriteLine("Please what is your lastname?");
-            //string lastName = Console.ReadLine();
-
-            //Console.WriteLine($"Your full name is {firstName} {lastName}");
-
-            string Name = "\"Ceejay\"";
-            Console.WriteLine(Name);
-
-            int[] EvenNumbers = new int[3];
-            EvenNumbers[0] = 0;
-            EvenNumbers[1] = 2;
-            EvenNumbers[2] = 4;
-
-            Console.WriteLine(EvenNumbers[2]);
-
+                    if (userChoice != "Yes" && userChoice != "No")
+                    {
+                        Console.WriteLine("Invalid choice, please say Yes or No");
+                    }
+                } while (userChoice != "Yes" && userChoice != "No");
+            } while (userChoice == "Yes");
+            
+            
         }
         public static void Main()
         {
