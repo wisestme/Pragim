@@ -17,8 +17,15 @@ namespace Pragim
                 start += 2;
             }
         }
+
+        public static void adder(int numberOne, int numberTwo)
+        {
+            int sum = numberOne + numberTwo;
+            Console.WriteLine(sum);
+        }
         public static void Main()
         {
+            Program.adder(5, 4);
             Program program = new Program();
             program.EvenNumbers(28);
             Console.WriteLine("Hello wisest... welcome to c# training");
