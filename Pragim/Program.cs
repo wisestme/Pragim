@@ -43,9 +43,10 @@ namespace Pragim
 
         public static void Main()
         {
-            Circle circle = new Circle(6);
-            float result = circle.CalculateArea();
-            Console.WriteLine(result);
+            Compute.Evaluate();
+            //Circle circle = new Circle(6);
+            //float result = circle.CalculateArea();
+            //Console.WriteLine(result);
 
             SecondServices.Customer customer = new SecondServices.Customer("Chijioke", "Nwagwu");
             customer.PrintFullName();
