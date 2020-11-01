@@ -7,31 +7,22 @@ namespace Pragim
     
     public class Program
     {
-        public static void NotMain()
+        public void EvenNumbers()
         {
-            for(int i = 0; i <= 20; i++)
-            {
-                
-                if (i % 2 == 1)
-                    continue;
-                Console.WriteLine(i);
-            }
-            int[] myNumbers = new int[3];
+            int start = 0;
 
-            myNumbers[0] = 101;
-            myNumbers[1] = 102;
-            myNumbers[2] = 103;
-
-            foreach (int oneNumber in myNumbers )
+            while(start < 20)
             {
-                Console.WriteLine(oneNumber);
+                Console.WriteLine(start);
+                start += 2;
             }
         }
         public static void Main()
         {
-            
+            Program program = new Program();
+            program.EvenNumbers();
             Console.WriteLine("Hello wisest... welcome to c# training");
-            NotMain();
+            
             //ImplementLists implementLists = new ImplementLists();
             //implementLists.LagosMarketsList();
 
