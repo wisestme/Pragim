@@ -27,14 +27,29 @@ namespace Pragim
         {
             j = 101;
         }
+
+        public void Calculate(int firstNumber, int secondNumber, out int Sum, out int Product)
+        {
+            Sum = firstNumber + secondNumber;
+            Product = firstNumber * secondNumber;
+        }
         public static void Main()
         {
+            Program program = new Program();
+
+            int plus = 0;
+            int times = 0;
+
+            program.Calculate(4, 5, out plus, out times);
+
+            Console.WriteLine($"{plus}, {times}");
+
             int i = 0;
             simpleMethod(ref i);
             Console.WriteLine(i);
 
 
-            Program program = new Program();
+            
 
             int sum = program.adder(3, 8);
             Console.WriteLine(sum);
