@@ -33,10 +33,17 @@ namespace Pragim
             Sum = firstNumber + secondNumber;
             Product = firstNumber * secondNumber;
         }
+
+        public static void ParameterMethod(params int[] Numbers)
+        {
+            Console.WriteLine($"There are {Numbers.Length} elements in the array");
+        }
+
         public static void Main()
         {
             Program program = new Program();
 
+            ParameterMethod(1, 2, 3, 4, 5, 6);
             int plus = 0;
             int times = 0;
 
