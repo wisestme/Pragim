@@ -7,11 +7,11 @@ namespace Pragim
     
     public class Program
     {
-        public void EvenNumbers()
+        public void EvenNumbers(int target)
         {
             int start = 0;
 
-            while(start < 20)
+            while(start < target)
             {
                 Console.WriteLine(start);
                 start += 2;
@@ -20,7 +20,7 @@ namespace Pragim
         public static void Main()
         {
             Program program = new Program();
-            program.EvenNumbers();
+            program.EvenNumbers(28);
             Console.WriteLine("Hello wisest... welcome to c# training");
             
             //ImplementLists implementLists = new ImplementLists();
