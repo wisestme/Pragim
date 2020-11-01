@@ -76,6 +76,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Services2\Circle.cs" />
     <Compile Include="Services2\Customer.cs" />
     <Compile Include="Services\CalculatorDelegate.cs" />
     <Compile Include="Services\EmployeePromoter.cs" />

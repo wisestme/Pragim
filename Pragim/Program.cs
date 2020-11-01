@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
 using Pragim.Services;
+using Pragim.Services2;
 using SecondServices = Pragim.Services2;
 
 namespace Pragim
@@ -42,6 +43,10 @@ namespace Pragim
 
         public static void Main()
         {
+            Circle circle = new Circle(6);
+            float result = circle.CalculateArea();
+            Console.WriteLine(result);
+
             SecondServices.Customer customer = new SecondServices.Customer("Chijioke", "Nwagwu");
             customer.PrintFullName();
             Program program = new Program();
