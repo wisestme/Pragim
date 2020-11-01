@@ -76,6 +76,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Services2\Customer.cs" />
     <Compile Include="Services\CalculatorDelegate.cs" />
     <Compile Include="Services\EmployeePromoter.cs" />
     <Compile Include="Services\ICustomer.cs" />
@@ -128,8 +129,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services2\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

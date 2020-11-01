@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
 using Pragim.Services;
+using SecondServices = Pragim.Services2;
 
 namespace Pragim
 {
@@ -41,6 +42,8 @@ namespace Pragim
 
         public static void Main()
         {
+            SecondServices.Customer customer = new SecondServices.Customer("Chijioke", "Nwagwu");
+            customer.PrintFullName();
             Program program = new Program();
 
             ParameterMethod(1, 2, 3, 4, 5, 6);
