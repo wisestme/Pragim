@@ -22,8 +22,18 @@ namespace Pragim
         {
             return numberOne + numberTwo;
         }
+
+        public static void simpleMethod(ref int j)
+        {
+            j = 101;
+        }
         public static void Main()
         {
+            int i = 0;
+            simpleMethod(ref i);
+            Console.WriteLine(i);
+
+
             Program program = new Program();
 
             int sum = program.adder(3, 8);
