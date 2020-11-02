@@ -43,6 +43,7 @@ namespace Pragim
 
         public static void Main()
         {
+            Processor.Process();
             Compute.Evaluate();
             //Circle circle = new Circle(6);
             //float result = circle.CalculateArea();

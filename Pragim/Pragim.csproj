@@ -78,6 +78,8 @@
     </Compile>
     <Compile Include="Services2\Circle.cs" />
     <Compile Include="Services2\Customer.cs" />
+    <Compile Include="Services2\Members.cs" />
+    <Compile Include="Services2\Processor.cs" />
     <Compile Include="Services\CalculatorDelegate.cs" />
     <Compile Include="Services\EmployeePromoter.cs" />
     <Compile Include="Services\ICustomer.cs" />
