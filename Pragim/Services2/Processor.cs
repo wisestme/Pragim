@@ -17,6 +17,11 @@ namespace Pragim.Services2
             paidMembers.Email = "wisest@gmail.com";
 
             paidMembers.PrintFullName();
+
+            VolunteerMembers volunteer = new VolunteerMembers();
+            volunteer.FirstName = "Gloria";
+            volunteer.LastName = "Vincent";
+            volunteer.PrintFullName();
         }
     }
 }
