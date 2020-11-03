@@ -40,7 +40,7 @@ namespace Pragim.Services2
         public string FirstName = "FN";
         public string LastName = "LN";
 
-        public void PrintFullName()
+        public virtual void PrintFullName()
         {
             Console.WriteLine($"{FirstName} {LastName}");
         }
@@ -48,17 +48,26 @@ namespace Pragim.Services2
 
     public class PartTimeEmployee : Employee
     {
-
+        public override void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName} -PTE");
+        }
     }
 
     public class FullTimeEmployee : Employee
     {
-
+        public override void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName} -FTE");
+        }
     }
 
     public class ContractEmployee : Employee
     {
-
+        public override void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName} -CE");
+        }
     }
 
 }
