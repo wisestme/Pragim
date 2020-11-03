@@ -35,6 +35,30 @@ namespace Pragim.Services2
         public float Stipend;
     }
 
-    
+    public class Employee
+    {
+        public string FirstName = "FN";
+        public string LastName = "LN";
+
+        public void PrintFullName()
+        {
+            Console.WriteLine($"{FirstName} {LastName}");
+        }
+    }
+
+    public class PartTimeEmployee : Employee
+    {
+
+    }
+
+    public class FullTimeEmployee : Employee
+    {
+
+    }
+
+    public class ContractEmployee : Employee
+    {
+
+    }
 
 }
