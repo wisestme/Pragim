@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Pragim.Services2
 {
-    public class Customer
+    interface ICustomer
+    {
+        void Print();
+    }
+    public class Customer : ICustomer
     {
         string _firstName;
         string _lastName;
@@ -15,6 +19,11 @@ namespace Pragim.Services2
         {
             _firstName = FirstName;
             _lastName = LastName;
+        }
+
+        public void Print()
+        {
+            Console.WriteLine("Implementing Interface method");
         }
 
         public void PrintFullName()
