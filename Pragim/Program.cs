@@ -52,6 +52,7 @@ namespace Pragim
             SecondServices.Customer customer = new SecondServices.Customer("Chijioke", "Nwagwu");
             customer.PrintFullName();
             customer.Print();
+            customer.PrintSecond();
             Program program = new Program();
 
             ParameterMethod(1, 2, 3, 4, 5, 6);

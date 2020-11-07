@@ -10,7 +10,12 @@ namespace Pragim.Services2
     {
         void Print();
     }
-    public class Customer : ICustomer
+
+    interface ISecondCustomer
+    {
+        void PrintSecond();
+    }
+    public class Customer : ICustomer, ISecondCustomer
     {
         string _firstName;
         string _lastName;
@@ -24,6 +29,11 @@ namespace Pragim.Services2
         public void Print()
         {
             Console.WriteLine("Implementing Interface method");
+        }
+
+        public void PrintSecond()
+        {
+            Console.WriteLine("implementing multiple interface inheritance");
         }
 
         public void PrintFullName()
